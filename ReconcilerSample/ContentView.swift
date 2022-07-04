@@ -2,13 +2,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+        NavigationView {
+            List {
+                NavigationLink(
+                    destination: {
+                        ReactView(with: "todo")
+                            .navigationTitle("Todo")
+                            .navigationBarTitleDisplayMode(.inline)
+                    },
+                    label: { Text("Todo") }
+                )
+            }
+            .navigationTitle("ReconcilerSample")
+        }
     }
 }

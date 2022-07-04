@@ -1,0 +1,20 @@
+{
+  "name": "todo-sample",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "format": "rome format --write src",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "rome": "^0.6.1-next",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
